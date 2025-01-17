@@ -1,0 +1,11 @@
+<h1>My Garage</h1>
+
+<ul>
+<% @favourites.each do |favourite| %>
+<p> ------------------------</p>
+<p><%= "#{favourite.car.brand} #{favourite.car.model}" %>
+<%= link_to "delete", favourite_path(favourite), data: {turbo_method: :delete, turbo_confirm: "are you sure?"} %></p>
+<% end %>
+</ul>
+
+<%= link_to "View World Garage", cars_path %>
