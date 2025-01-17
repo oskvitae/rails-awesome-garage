@@ -14,8 +14,14 @@
  *= require_self
  */
 
+* {
+  font-family:Arial, Helvetica, sans-serif
+}
+
  h1 {
   background-color: rgb(234, 234, 234);
   padding: 8px;
-  border: 2px, solid,;
+  margin: 16px -8px 16px -12px;
+  border-style: solid;
+  border-width: 2px 0px;
  }
